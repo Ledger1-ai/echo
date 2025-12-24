@@ -1,0 +1,12 @@
+{
+  "name": "VoiceHub by Ledger1.ai",
+  "short_name": "VoiceHub",
+  "description": "Live AI audio agent with ETH billing on Base.",
+  "start_url": "/",
+  "icon_url": "/android-chrome-192x192.png",
+  "splash_image_url": "https://engram1.blob.core.windows.net/voicehub/l1voicebg.png",
+  "theme_color": "#111111",
+  "background_color": "#0b0b0b",
+  "categories": ["utilities", "productivity", "audio"],
+  "related_applications": []
+}

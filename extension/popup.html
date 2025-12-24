@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>VoiceHub Space Mic</title>
+    <style>
+      :root { --bg:#0b0b0f; --panel:#151621; --fg:#e6e7ef; --muted:#9aa0b4; --border:#232538; --primary:#4dd9cf; }
+      html,body { margin:0; padding:0; }
+      body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color:var(--fg); background:var(--bg); }
+      .panel { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:12px; width:320px; }
+      .row { display:flex; gap:8px; align-items:center; }
+      .between { justify-content: space-between; }
+      button { padding:7px 12px; border-radius:8px; border:1px solid var(--border); background:#1b1d2b; color:var(--fg); cursor:pointer; }
+      button:hover { background:#202235; }
+      .on { background:var(--primary); color:#fff; border-color: var(--primary); }
+      select, input[type=file] { width:100%; padding:6px; border-radius:8px; border:1px solid var(--border); background:#1b1d2b; color:var(--fg); }
+      label { font-size:12px; color:var(--muted); display:block; margin-bottom:4px; }
+      small { color:var(--muted); }
+      input[type=range] { accent-color: var(--primary); }
+      #progress { width:100%; }
+      .badge { display:inline-flex; align-items:center; gap:6px; padding:4px 8px; border-radius:999px; background:#11121a; border:1px solid var(--border); color:var(--muted); font-size:12px; }
+      .dot { width:8px; height:8px; border-radius:999px; background:#ff5f5f; }
+      .dot.on { background:#27d17f; }
+      #error { display:none; color:#ff7a7a; font-size:12px; margin-bottom:8px; }
+    </style>
+  </head>
+  <body>
+    <div class="panel" style="width: 100%; max-width: 360px; box-sizing: border-box;">
+      <div class="row between" style="align-items:center; gap:10px; margin-bottom:10px">
+        <div class="row" style="gap:8px; align-items:center">
+          <img src="vhsymbol.png" alt="VoiceHub by Ledger1.ai" width="20" height="20" style="border-radius:4px" />
+          <strong>VoiceHub by Ledger1.ai</strong>
+        </div>
+        <div class="badge">Mic <span id="modeDot" class="dot"></span></div>
+      </div>
+      <div id="error"></div>
+      <div class="row between" style="margin-bottom:8px">
+        <label style="font-weight:600">Space Mic</label>
+        <button id="toggle">Enable</button>
+      </div>
+
+      <div class="row" style="gap:8px; margin-bottom:8px">
+        <button id="capStart">Start Capture</button>
+        <button id="capStop">Stop Capture</button>
+        <small id="capStatus" style="margin-left:auto"></small>
+      </div>
+
+      <div class="row" style="margin-top:10px; flex-wrap:wrap; gap:8px">
+        <div class="row" style="gap:6px; align-items:center">
+          <label style="margin:0">Vol</label>
+          <input id="vol" type="range" min="0" max="1" step="0.01" value="0.8" style="width:180px" />
+        </div>
+        <label class="row" style="gap:6px; align-items:center; margin-left:auto">
+          <input id="mon" type="checkbox" />
+          <span>Monitor</span>
+        </label>
+      </div>
+
+      <div class="row" style="margin-top:8px; position:relative; height:60px">
+        <canvas id="viz" width="320" height="48" style="position:absolute; left:0; right:0; top:0; height:48px; width:100%; border:1px solid var(--border); border-radius:6px; background:#0d0e16"></canvas>
+      </div>
+
+      <p style="margin-top:8px"><small>Toggle mic on, then allow mic access on X. Agent audio will be routed.</small></p>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

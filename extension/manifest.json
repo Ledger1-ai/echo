@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "VoiceHub Space Mic",
+  "version": "0.1.0",
+  "description": "Route your AI agent audio into X/Twitter Spaces as a microphone.",
+  "icons": {
+    "16": "vhsymbol.png",
+    "32": "vhsymbol.png",
+    "48": "vhsymbol.png",
+    "128": "vhsymbol.png"
+  },
+  "action": { "default_title": "VoiceHub Space Mic", "default_popup": "popup.html", "default_icon": { "16": "vhsymbol.png", "32": "vhsymbol.png" } },
+  "permissions": ["scripting", "activeTab", "tabs", "storage", "tabCapture", "offscreen"],
+  "host_permissions": [
+    "https://x.com/*",
+    "https://twitter.com/*",
+    "http://localhost/*",
+    "https://*/*"
+  ],
+  "background": { "service_worker": "sw.js" },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["detect.js"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["injected.js", "worklet.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

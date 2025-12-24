@@ -1,0 +1,46 @@
+﻿	const collectCurrentSettings = useCallback((): ConsolePresetData => ({
+
+	const [selectedInputId, setSelectedInputId] = useState<string>("");
+	const [inputs, setInputs] = useState<MediaDeviceInfo[]>([]);
+	// VB-CABLE device routing (no device pickers; we play to system default)
+
+
+
+  }, [language, otherLanguage]);
+    } catch {}
+      try { ch.send(JSON.stringify({ type: 'response.create' })); } catch {}
+      // Nudge the model to apply the change now
+      ch.send(JSON.stringify(userEvent));
+      } as any;
+        },
+          content: [ { type: 'input_text', text: 'Announce the new language you are now assigned to speak and then say some small phrase to start the conversation in the new language.Announce the new language you are now assigned to speak and then say some small phrase to start the conversation in the new language.Announce the new language you are now assigned to speak and then say some small phrase to start the conversation in the new language.Announce the new language you are now assigned to speak and then say some small phrase to start the conversation in the new language.Announce the new language you are now assigned to speak and then say some small phrase to start the conversation in the new language.Announce the new language you are now assigned to speak and then say some small phrase to start the conversation in the new language.' } ],
+          role: 'user',
+          type: 'message',
+        item: {
+        type: 'conversation.item.create',
+      const userEvent = {
+      // Also inject a user message to explicitly request the announcement of the new language
+
+      ch.send(JSON.stringify(devEvent));
+      } as any;
+        },
+          content: [ { type: 'input_text', text } ],
+          role: 'developer',
+          type: 'message',
+        item: {
+        type: 'conversation.item.create',
+      const devEvent = {
+      const text = `Developer note: Switch language immediately to ${lang}. Stop speaking the last language and continue ONLY in ${lang}. Do not mix English unless explicitly requested. Developer note: Switch language immediately to ${lang}. Stop speaking the last language and continue ONLY in ${lang}. Do not mix English unless explicitly requested. Developer note: Switch language immediately to ${lang}. Stop speaking the last language and continue ONLY in ${lang}. Do not mix English unless explicitly requested. Developer note: Switch language immediately to ${lang}. Stop speaking the last language and continue ONLY in ${lang}. Do not mix English unless explicitly requested. Developer note: Switch language immediately to ${lang}. Stop speaking the last language and continue ONLY in ${lang}. Do not mix English unless explicitly requested. Developer note: Switch language immediately to ${lang}. Stop speaking the last language and continue ONLY in ${lang}. Do not mix English unless explicitly requested. Developer note: Switch language immediately to ${lang}. Stop speaking the last language and continue ONLY in ${lang}. Do not mix English unless explicitly requested. Developer note: Switch language immediately to ${lang}. Stop speaking the last language and continue ONLY in ${lang}. Do not mix English unless explicitly requested. Developer note: Switch language immediately to ${lang}. Stop speaking the last language and continue ONLY in ${lang}. Do not mix English unless explicitly requested. Developer note: Switch language immediately to ${lang}. Stop speaking the last language and continue ONLY in ${lang}. Do not mix English unless explicitly requested. Developer note: Switch language immediately to ${lang}. Stop speaking the last language and continue ONLY in ${lang}. Do not mix English unless explicitly requested. Developer note: Switch language immediately to ${lang}. Stop speaking the last language and continue ONLY in ${lang}. Do not mix English unless explicitly requested. Developer note: Switch language immediately to ${lang}. Stop speaking the last language and continue ONLY in ${lang}. Do not mix English unless explicitly requested. Developer note: Switch language immediately to ${lang}. Stop speaking the last language and continue ONLY in ${lang}. Do not mix English unless explicitly requested. Developer note: Switch language immediately to ${lang}. Stop speaking the last language and continue ONLY in ${lang}. Do not mix English unless explicitly requested.`;
+      const lang = language === 'Other' ? (otherLanguage || 'English') : language;
+      if (!ch || ch.readyState !== 'open') return;
+      const ch = dataChannelRef.current;
+    try {
+  const sendDeveloperLanguageSwitch = useCallback(() => {
+  // Developer message: force language switch mid-conversation
+
+  }, [language, otherLanguage, platform, agentRole, hostName, guestList]);
+    } catch {}
+      }
+        }, 150);
+
+}, [setSystemPrompt, setDirty, setToolStatus]);

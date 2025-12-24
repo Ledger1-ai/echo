@@ -1,0 +1,13 @@
+{
+  "name": "VoiceHub by Ledger1.ai",
+  "icon": "/android-chrome-192x192.png",
+  "description": "VoiceHub by Ledger1: Live AI audio conversations with real-time voice interaction.",
+  "splash": "https://engram1.blob.core.windows.net/voicehub/l1voicebg.png",
+  "home_url": "/",
+  "terms_url": "/",
+  "privacy_url": "/",
+  "app": {
+    "platform": "web",
+    "url": "/"
+  }
+}
