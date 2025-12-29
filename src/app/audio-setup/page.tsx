@@ -4,7 +4,7 @@ export default function AudioSetupPage() {
 	return (
 		<div className="max-w-3xl mx-auto px-4 py-10 space-y-6">
 			<h1 className="text-3xl font-bold">Audio Setup (Windows)</h1>
-			<p className="text-muted-foreground">Use VB-Audio virtual cables and route per‑app audio with Volume Mixer. Two browsers are required: run <b>VoiceHub by Ledger1.ai</b> on <b>Edge</b>, and run your <b>Space/Meeting/Stream</b> on <b>Chrome</b>.</p>
+			<p className="text-muted-foreground">Use VB-Audio virtual cables and route per‑app audio with Volume Mixer. Two browsers are required: run <b>BasaltEcho by BasaltHQ.com</b> on <b>Edge</b>, and run your <b>Space/Meeting/Stream</b> on <b>Chrome</b>.</p>
 
 			<div className="rounded-md border p-4 bg-background/50 space-y-2">
 				<p className="text-sm font-semibold">Downloads</p>
@@ -27,11 +27,11 @@ export default function AudioSetupPage() {
 					"Set CABLE Input (Playback) to 1 ch, 16-bit, 48000 Hz",
 					"Set Hi-Fi Cable Output (Recording) to 1 ch, 16-bit, 48000 Hz",
 					"Set CABLE Output (Recording) to 1 ch, 16-bit, 48000 Hz",
-					"Volume Mixer: Edge (VoiceHub) Input → CABLE Output",
-					"Volume Mixer: Edge (VoiceHub) Output → Hi-Fi Cable Input",
+					"Volume Mixer: Edge (BasaltEcho) Input → CABLE Output",
+					"Volume Mixer: Edge (BasaltEcho) Output → Hi-Fi Cable Input",
 					"Volume Mixer: Chrome (Space) Input → Hi-Fi Cable Output",
 					"Volume Mixer: Chrome (Space) Output → CABLE Input",
-					"Open VoiceHub Console in Edge",
+					"Open BasaltEcho Console in Edge",
 					"Join space/meeting/stream in Chrome",
 					"Start the agent and verify meters move",
 					"If stuck, join Discord: discord.gg/q4tFymyAnx",

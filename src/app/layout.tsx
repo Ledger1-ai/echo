@@ -21,14 +21,14 @@ const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
 
 export const metadata: Metadata = {
   metadataBase: new URL(APP_URL),
-  applicationName: "VoiceHub by Ledger1.ai",
+  applicationName: "BasaltEcho by BasaltHQ.com",
   title: {
-    default: "VoiceHub by Ledger1.ai",
-    template: "%s • VoiceHub",
+    default: "BasaltEcho by BasaltHQ.com",
+    template: "%s • BasaltEcho",
   },
-  description: "Live AI audio agent with ETH billing on Base - VoiceHub by Ledger1.ai",
+  description: "Live AI audio agent with ETH billing on Base - BasaltEcho by BasaltHQ.com",
   keywords: [
-    "VoiceHub by Ledger1.ai",
+    "BasaltEcho by BasaltHQ.com",
     "AI",
     "agent",
     "voice",
@@ -42,22 +42,22 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: APP_URL,
-    title: "VoiceHub by Ledger1.ai",
-    siteName: "VoiceHub",
-    description: "Live AI audio agent with ETH billing on Base - VoiceHub by Ledger1.ai",
+    title: "BasaltEcho by BasaltHQ.com",
+    siteName: "BasaltEcho",
+    description: "Live AI audio agent with ETH billing on Base - BasaltEcho by BasaltHQ.com",
     images: [
       {
         url: "https://engram1.blob.core.windows.net/voicehub/l1voicebg.png",
         width: 1200,
         height: 630,
-        alt: "VoiceHub by Ledger1.ai",
+        alt: "BasaltEcho by BasaltHQ.com",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "VoiceHub by Ledger1.ai",
-    description: "Live AI audio agent with ETH billing on Base - VoiceHub by Ledger1.ai",
+    title: "BasaltEcho by BasaltHQ.com",
+    description: "Live AI audio agent with ETH billing on Base - BasaltEcho by BasaltHQ.com",
     images: ["https://engram1.blob.core.windows.net/voicehub/l1voicebg.png"],
   },
   icons: {
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "VoiceHub by Ledger1.ai",
+    title: "BasaltEcho by BasaltHQ.com",
   },
   category: "utilities",
   robots: {

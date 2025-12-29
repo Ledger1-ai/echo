@@ -157,8 +157,8 @@ export function Navbar() {
 		<header className="w-full sticky top-0 z-20 backdrop-blur bg-background/70 border-b">
 			<div className="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">
 				<Link href="/" className="flex items-center gap-2 min-w-0">
-					<img src="/vhlogo.png" alt="VoiceHub by Ledger1.ai" className="w-auto h-9 rounded-md object-contain bg-transparent flex-shrink-0" />
-					{/* <span className="hidden sm:inline text-sm md:text-xs font-semibold leading-none">VoiceHub by Ledger1.ai</span> */}
+					<img src="/BasaltEchoWide.png" alt="BasaltEcho by BasaltHQ.com" className="w-auto h-9 rounded-md object-contain bg-transparent flex-shrink-0" />
+					{/* <span className="hidden sm:inline text-sm md:text-xs font-semibold leading-none">BasaltEcho by BasaltHQ.com</span> */}
 				</Link>
                 <div className="flex items-center gap-2 flex-shrink-0">
                     <nav ref={navRef} className="relative hidden md:flex items-center gap-0.5 md:gap-1">
@@ -288,10 +288,10 @@ export function Navbar() {
                           wallets={wallets}
                           connectButton={{
                             label: <span className="microtext">Login</span>,
-                            className: "px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#4dd9cf]",
+                            className: "px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#ffc029]",
                             style: {
                               backgroundColor: "transparent",
-                              border: "1px solid #4dd9cf",
+                                border: "1px solid #ffc029",
                               color: "#e5e7eb",
                               padding: "6px 10px",
                               lineHeight: "1",
@@ -300,17 +300,17 @@ export function Navbar() {
                           }}
                           signInButton={{
                             label: "Authenticate",
-                            className: "px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#4dd9cf]",
+                              className: "px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#ffc029]",
                             style: {
                               backgroundColor: "transparent",
-                              border: "1px solid #4dd9cf",
+                              border: "1px solid #ffc029",
                               color: "#e5e7eb",
                               padding: "6px 10px",
                               lineHeight: "1",
                               height: "28px",
                             },
                           }}
-                          connectModal={{ title: "Login", titleIcon: "/vhsymbol.png", size: "compact" }}
+                          connectModal={{ title: "Login", titleIcon: "/bssymbol.png", size: "compact" }}
                         />
                       </ThirdwebAppProvider>
                     </div>
@@ -349,10 +349,10 @@ export function Navbar() {
                               wallets={wallets}
                               connectButton={{
                                 label: <span className="microtext">Login</span>,
-                                className: "w-full px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#4dd9cf]",
+                                  className: "w-full px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#ffc029]",
                                 style: {
                                   backgroundColor: "transparent",
-                                  border: "1px solid #4dd9cf",
+                                  border: "1px solid #ffc029",
                                   color: "#e5e7eb",
                                   padding: "6px 10px",
                                   lineHeight: "1",
@@ -361,17 +361,17 @@ export function Navbar() {
                               }}
                               signInButton={{
                                 label: "Authenticate",
-                                className: "w-full px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#4dd9cf]",
+                                  className: "w-full px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#ffc029]",
                                 style: {
                                   backgroundColor: "transparent",
-                                  border: "1px solid #4dd9cf",
+                                  border: "1px solid #ffc029",
                                   color: "#e5e7eb",
                                   padding: "6px 10px",
                                   lineHeight: "1",
                                   height: "28px",
                                 },
                               }}
-                              connectModal={{ title: "Login", titleIcon: "/vhsymbol.png", size: "compact" }}
+                              connectModal={{ title: "Login", titleIcon: "/bssymbol.png", size: "compact" }}
                             />
                           </ThirdwebAppProvider>
                         </div>

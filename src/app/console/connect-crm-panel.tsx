@@ -23,8 +23,8 @@ function randomString(len = 64): string {
 }
 
 /**
- * VoiceHub "Connect CRM" panel
- * - Generates PKCE state and code_verifier, constructs an authorize URL against Ledger1CRM (/api/oauth/authorize)
+ * BasaltEcho "Connect CRM" panel
+ * - Generates PKCE state and code_verifier, constructs an authorize URL against BasaltCRM (/api/oauth/authorize)
  * - User retrieves the 'code' (scaffold returns JSON with suggested_redirect) and pastes it to complete token exchange
  * - Calls VoiceHub /api/crm/connect to store tokens (scaffold) and /api/crm/status (optional)
  */
@@ -114,7 +114,7 @@ export default function ConnectCrmPanel({ walletLower: walletLowerProp }: Connec
       const top = Math.max(0, Math.floor((window.screen.height - height) / 2));
       const features = `width=${width},height=${height},left=${left},top=${top},menubar=no,toolbar=no,location=no,status=no`;
       // Use a named popup and DO NOT set noopener/noreferrer so window.opener is available to the CRM page
-      const w = window.open(authorizeUrl, "ledger1crm_oauth", features);
+      const w = window.open(authorizeUrl, "basaltcrm_oauth", features);
       if (!w) {
         setStatusText("Popup blocked. Allow popups for this site or copy the URL manually.");
       } else {
@@ -206,7 +206,7 @@ export default function ConnectCrmPanel({ walletLower: walletLowerProp }: Connec
     const onMessage = async (ev: MessageEvent) => {
       try {
         const data: any = ev.data;
-        if (!data || data.type !== "ledger1crm_oauth_code") return;
+        if (!data || data.type !== "basaltcrm_oauth_code") return;
 
         const base = (crmBaseUrl || "").trim().replace(/\/+$/, "");
         const crmOrigin = /^https?:\/\//i.test(base) ? new URL(base).origin : "";
@@ -261,7 +261,7 @@ export default function ConnectCrmPanel({ walletLower: walletLowerProp }: Connec
   return (
     <div className="glass-pane rounded-xl border p-4 space-y-3">
       <div className="flex items-center gap-2">
-        <div className="text-sm font-semibold">Connect Ledger1 CRM</div>
+        <div className="text-sm font-semibold">Connect BasaltCRM</div>
         {connected && (
           <span className="px-2 py-0.5 text-xs rounded-md bg-emerald-600/20 text-emerald-300 border border-emerald-600/30">
             Connected ✓
@@ -274,7 +274,7 @@ export default function ConnectCrmPanel({ walletLower: walletLowerProp }: Connec
           <label className="text-xs opacity-80">CRM Base URL</label>
           <input
             className="w-full h-9 px-3 py-1 border rounded-md bg-background"
-            placeholder="https://ledger1crm.example.com"
+            placeholder="https://basaltcrm.example.com"
             value={crmBaseUrl}
             onChange={(e) => setCrmBaseUrl(e.target.value)}
           />

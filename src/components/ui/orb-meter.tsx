@@ -13,7 +13,7 @@ import React, { useEffect, useRef } from "react";
 type OrbMeterProps = {
   value: number; // 0..1 (clamped)
   label?: string;
-  color?: string; // hex (#rgb/#rrggbb). Defaults to CSS var(--primary) or #4dd9cf
+  color?: string; // hex (#rgb/#rrggbb). Defaults to CSS var(--primary) or #ffc029
   width?: number; // CSS px
   height?: number; // CSS px
 };
@@ -102,7 +102,7 @@ export default function OrbMeter({
       const rgb = hexToRgbComponents(css);
       if (rgb) return { rgb, hsl: rgbToHsl(rgb[0], rgb[1], rgb[2]) };
     } catch {}
-    const fallback: [number, number, number] = [77, 217, 207]; // #4dd9cf
+    const fallback: [number, number, number] = [255, 192, 41]; // #ffc029
     return { rgb: fallback, hsl: rgbToHsl(fallback[0], fallback[1], fallback[2]) };
   }
 

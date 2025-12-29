@@ -47,14 +47,14 @@ export default function LoginPage() {
       <div className="space-y-2">
         <h1 className="text-3xl font-bold">Login</h1>
         <p className="text-muted-foreground microtext">
-          Connect your wallet and authenticate to use VoiceHub.
+          Connect your wallet and authenticate to use BasaltEcho.
         </p>
       </div>
 
       <div className="glass-pane rounded-xl p-6 border flex items-center justify-center min-h-[240px]">
         {!loggedIn ? (
           <div className="w-full flex flex-col items-center justify-center gap-4 text-center">
-            <img src="/vhsymbol.png" alt="VoiceHub by Ledger1.ai" className="w-16 h-16 rounded-lg object-contain" />
+            <img src="/bssymbol.png" alt="BasaltEcho by BasaltHQ.com" className="w-16 h-16 rounded-lg object-contain" />
             <div className="text-sm text-muted-foreground">Use the button below to connect and authenticate</div>
             <ConnectButtonDynamic
               client={client}
@@ -62,10 +62,10 @@ export default function LoginPage() {
               wallets={wallets}
               connectButton={{
                 label: <span className="microtext">Login</span>,
-                className: "px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#4dd9cf]",
+                className: "px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#ffc029]",
                 style: {
                   backgroundColor: "transparent",
-                  border: "1px solid #4dd9cf",
+                  border: "1px solid #ffc029",
                   color: "#e5e7eb",
                   padding: "6px 10px",
                   lineHeight: "1",
@@ -74,17 +74,17 @@ export default function LoginPage() {
               }}
               signInButton={{
                 label: "Authenticate",
-                className: "px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#4dd9cf]",
+                className: "px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#ffc029]",
                 style: {
                   backgroundColor: "transparent",
-                  border: "1px solid #4dd9cf",
+                  border: "1px solid #ffc029",
                   color: "#e5e7eb",
                   padding: "6px 10px",
                   lineHeight: "1",
                   height: "28px",
                 },
               }}
-              connectModal={{ title: "Login", titleIcon: "/vhsymbol.png", size: "compact" }}
+              connectModal={{ title: "Login", titleIcon: "/bssymbol.png", size: "compact" }}
             />
           </div>
         ) : (
@@ -92,10 +92,10 @@ export default function LoginPage() {
             <div className="text-sm text-muted-foreground">You are logged in.</div>
             <button
               onClick={() => router.replace("/console")}
-              className="px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#4dd9cf]"
+              className="px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#ffc029]"
               style={{
                 backgroundColor: "transparent",
-                border: "1px solid #4dd9cf",
+                border: "1px solid #ffc029",
                 color: "#e5e7eb",
                 padding: "6px 10px",
                 lineHeight: "1",

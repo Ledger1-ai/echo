@@ -110,7 +110,7 @@ const BOWL_VARIANTS: Record<
   { accent: string; back: string; front: string }
 > = {
   red: {
-    accent: "#4dd9cf",
+    accent: "#ffc029",
     back: "/redbowlback.png",
     front: "/redbowlfront.png",
   },

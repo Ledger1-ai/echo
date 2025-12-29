@@ -56,8 +56,8 @@ export default function Home() {
           <div className="text-center max-w-4xl mx-auto">
             <div className="inline-flex items-center justify-center mb-8">
               <img
-                src="/vhlogowide.png"
-                alt="VoiceHub by Ledger1.ai"
+                src="/BasaltEchoWide.png"
+                alt="BasaltEcho by BasaltHQ"
                 className="h-16 w-auto object-contain"
               />
             </div>
@@ -70,7 +70,7 @@ export default function Home() {
             </h1>
             
             <p className="text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-              VoiceHub by Ledger1.ai delivers professional-grade AI voice interactions with ultra-low latency. 
+              BasaltEcho by BasaltHQ delivers professional-grade AI voice interactions with ultra-low latency. 
               Connect, customize, and communicate with advanced AI assistants in real-time through any platform.
             </p>
             
@@ -292,7 +292,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Built for Professionals</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              VoiceHub serves diverse industries and use cases
+              BasaltEcho serves diverse industries and use cases
             </p>
           </div>
 
@@ -431,7 +431,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="text-center mt-8 text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()} VoiceHub by Ledger1.ai. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} BasaltEcho by BasaltHQ. All rights reserved.</p>
           </div>
         </div>
       </section>

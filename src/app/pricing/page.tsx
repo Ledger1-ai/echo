@@ -455,7 +455,7 @@ export default function PricingPage() {
           <button
             onClick={() => setAdvanced(false)}
             className={`px-3 py-1.5 rounded-md border microtext transition-colors ${
-              !advanced ? "bg-[#4dd9cf] text-white border-transparent" : "hover:bg-foreground/5"
+              !advanced ? "bg-[#ffc029] text-white border-transparent" : "hover:bg-foreground/5"
             }`}
           >
             Step-by-step
@@ -463,7 +463,7 @@ export default function PricingPage() {
           <button
             onClick={() => setAdvanced(true)}
             className={`px-3 py-1.5 rounded-md border microtext transition-colors ${
-              advanced ? "bg-[#4dd9cf] text-white border-transparent" : "hover:bg-foreground/5"
+              advanced ? "bg-[#ffc029] text-white border-transparent" : "hover:bg-foreground/5"
             }`}
           >
             Advanced
@@ -488,7 +488,7 @@ export default function PricingPage() {
                         }}
                         className={`w-full flex items-center gap-2 px-2 py-1.5 rounded-md border transition-colors ${
                           active
-                            ? "bg-[color:color-mix(in_srgb,_#4dd9cf_18%,_transparent)] text-foreground border-transparent"
+                            ? "bg-[color:color-mix(in_srgb,_#ffc029_18%,_transparent)] text-foreground border-transparent"
                             : done
                             ? "opacity-80"
                             : "hover:bg-foreground/5"
@@ -499,7 +499,7 @@ export default function PricingPage() {
                             done
                               ? "bg-[var(--primary)] text-[var(--primary-foreground)]"
                               : active
-                              ? "bg-[#4dd9cf] text-white"
+                              ? "bg-[#ffc029] text-white"
                               : "bg-foreground/10"
                           }`}
                         >
@@ -622,7 +622,7 @@ export default function PricingPage() {
                       <div className="flex items-center gap-2">
                         <input
                           type="number"
-                          className="w-32 h-9 px-3 py-1 border rounded-md bg-background focus:ring-2 focus:ring-[#4dd9cf]/20 transition-all"
+                          className="w-32 h-9 px-3 py-1 border rounded-md bg-background focus:ring-2 focus:ring-[#ffc029]/20 transition-all"
                           min={config.minMinutes}
                           step={1}
                           value={minutes}
@@ -649,7 +649,7 @@ export default function PricingPage() {
                               key={m}
                               onClick={() => setMinutes(m)}
                               className={`px-3 py-1.5 rounded-md border transition-colors ${
-                                minutes === m ? "bg-[#4dd9cf] text-white border-transparent" : "hover:bg-foreground/5"
+                                minutes === m ? "bg-[#ffc029] text-white border-transparent" : "hover:bg-foreground/5"
                               }`}
                             >
                               {m}m
@@ -747,7 +747,7 @@ export default function PricingPage() {
                           type="button"
                           onClick={() => setToken(tk.symbol as any)}
                           className={`${
-                            token === tk.symbol ? "bg-[#4dd9cf] text-white border-transparent" : "hover:bg-foreground/5"
+                            token === tk.symbol ? "bg-[#ffc029] text-white border-transparent" : "hover:bg-foreground/5"
                           } w-full min-w-0 px-2 md:px-3 py-2 rounded-md border text-xs md:text-sm transition-colors`}
                         >
                           <span className="inline-flex items-center justify-center gap-1.5 md:gap-2 min-w-0">
@@ -832,7 +832,7 @@ export default function PricingPage() {
                       {discountPct > 0 && (
                         <div className="flex items-center justify-between text-xs">
                           <span className="text-muted-foreground">Discount</span>
-                          <span className="px-2 py-0.5 rounded-md text-[#4dd9cf] bg-[color:color-mix(in_srgb,_#4dd9cf_15%,_transparent)] font-semibold">
+                          <span className="px-2 py-0.5 rounded-md text-[#ffc029] bg-[color:color-mix(in_srgb,_#ffc029_15%,_transparent)] font-semibold">
                             {Math.round(discountPct * 100)}% off
                           </span>
                         </div>
@@ -913,14 +913,14 @@ export default function PricingPage() {
                           />
                         ) : (
                           <div className="w-full flex flex-col items-center justify-center gap-4 py-8 text-center min-h-[240px]">
-                            <img src="/vhsymbol.png" alt="VoiceHub by Ledger1.ai" className="w-16 h-16 rounded-lg object-contain" />
+                            <img src="/BasaltEchoD.png" alt="BasaltEcho by BasaltHQ.com" className="w-16 h-16 rounded-lg object-contain" />
                             <div className="text-sm text-muted-foreground">Review the summary, then continue to checkout</div>
                             <button
                               onClick={() => setShowCheckout(true)}
-                              className="px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#4dd9cf]"
+                              className="px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#ffc029]"
                               style={{
                                 backgroundColor: "transparent",
-                                border: "1px solid #4dd9cf",
+                                border: "1px solid #ffc029",
                                 color: "#e5e7eb",
                                 padding: "6px 10px",
                                 lineHeight: "1",
@@ -934,7 +934,7 @@ export default function PricingPage() {
                         )
                       ) : (
                         <div className="w-full flex flex-col items-center justify-center gap-4 py-8 text-center">
-                          <img src="/vhsymbol.png" alt="VoiceHub by Ledger1.ai" className="w-16 h-16 rounded-lg object-contain" />
+                          <img src="/BasaltEchoD.png" alt="BasaltEcho by BasaltHQ.com" className="w-16 h-16 rounded-lg object-contain" />
                           <div className="text-sm text-muted-foreground">
                             {fiat <= 0 ? "Enter minutes to proceed" : "Login to continue checkout"}
                           </div>
@@ -944,10 +944,10 @@ export default function PricingPage() {
                             wallets={wallets}
                             connectButton={{
                               label: <span className="microtext">Login</span>,
-                              className: "px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#4dd9cf]",
+                              className: "px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#ffc029]",
                               style: {
                                 backgroundColor: "transparent",
-                                border: "1px solid #4dd9cf",
+                                border: "1px solid #ffc029",
                                 color: "#e5e7eb",
                                 padding: "6px 10px",
                                 lineHeight: "1",
@@ -956,10 +956,10 @@ export default function PricingPage() {
                             }}
                             signInButton={{
                               label: "Authenticate",
-                              className: "px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#4dd9cf]",
+                              className: "px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#ffc029]",
                               style: {
                                 backgroundColor: "transparent",
-                                border: "1px solid #4dd9cf",
+                                border: "1px solid #ffc029",
                                 color: "#e5e7eb",
                                 padding: "6px 10px",
                                 lineHeight: "1",
@@ -988,7 +988,7 @@ export default function PricingPage() {
                 <div className="flex items-center gap-2">
                   <input
                     type="number"
-                    className="w-32 h-9 px-3 py-1 border rounded-md bg-background focus:ring-2 focus:ring-[#4dd9cf]/20 transition-all"
+                    className="w-32 h-9 px-3 py-1 border rounded-md bg-background focus:ring-2 focus:ring-[#ffc029]/20 transition-all"
                     min={config.minMinutes}
                     step={1}
                     value={minutes}
@@ -1015,7 +1015,7 @@ export default function PricingPage() {
                         key={m}
                         onClick={() => setMinutes(m)}
                         className={`px-3 py-1.5 rounded-md border transition-colors ${
-                          minutes === m ? "bg-[#4dd9cf] text-white border-transparent" : "hover:bg-foreground/5"
+                          minutes === m ? "bg-[#ffc029] text-white border-transparent" : "hover:bg-foreground/5"
                         }`}
                       >
                         {m}m
@@ -1038,7 +1038,7 @@ export default function PricingPage() {
                         type="button"
                         onClick={() => setToken(tk.symbol as any)}
                         className={`w-full min-w-0 h-10 md:h-auto px-2 md:px-3 rounded-md border text-xs md:text-sm transition-colors flex items-center md:flex-col justify-center overflow-hidden ${
-                          token === tk.symbol ? "bg-[#4dd9cf] text-white border-transparent" : "hover:bg-foreground/5"
+                          token === tk.symbol ? "bg-[#ffc029] text-white border-transparent" : "hover:bg-foreground/5"
                         }`}
                       >
                         <span className="inline-flex items-center justify-center gap-1.5 md:gap-1 min-w-0 md:flex-col">
@@ -1205,7 +1205,7 @@ export default function PricingPage() {
                     {discountPct > 0 && (
                       <div className="flex items-center justify-between text-xs">
                         <span className="text-muted-foreground">Discount</span>
-                        <span className="px-2 py-0.5 rounded-md text-[#4dd9cf] bg-[color:color-mix(in_srgb,_#4dd9cf_15%,_transparent)] font-semibold">
+                        <span className="px-2 py-0.5 rounded-md text-[#ffc029] bg-[color:color-mix(in_srgb,_#ffc029_15%,_transparent)] font-semibold">
                           {Math.round(discountPct * 100)}% off
                         </span>
                       </div>
@@ -1286,14 +1286,14 @@ export default function PricingPage() {
                         />
                       ) : (
                         <div className="w-full flex flex-col items-center justify-center gap-4 py-8 text-center">
-                          <img src="/vhsymbol.png" alt="VoiceHub by Ledger1.ai" className="w-16 h-16 rounded-lg object-contain" />
+                          <img src="/BasaltEchoD.png" alt="BasaltEcho by BasaltHQ.com" className="w-16 h-16 rounded-lg object-contain" />
                           <div className="text-sm text-muted-foreground">Review the summary, then continue to checkout</div>
                           <button
                             onClick={() => setShowCheckout(true)}
-                            className="px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#4dd9cf]"
+                            className="px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#ffc029]"
                             style={{
                               backgroundColor: "transparent",
-                              border: "1px solid #4dd9cf",
+                              border: "1px solid #ffc029",
                               color: "#e5e7eb",
                               padding: "6px 10px",
                               lineHeight: "1",
@@ -1307,7 +1307,7 @@ export default function PricingPage() {
                       )
                     ) : (
                       <div className="w-full flex flex-col items-center justify-center gap-4 py-8 text-center">
-                        <img src="/vhsymbol.png" alt="VoiceHub by Ledger1.ai" className="w-16 h-16 rounded-lg object-contain" />
+                        <img src="/BasaltEchoD.png" alt="BasaltEcho by BasaltHQ.com" className="w-16 h-16 rounded-lg object-contain" />
                         <div className="text-sm text-muted-foreground">
                           {fiat <= 0 ? "Enter minutes to proceed" : "Login to continue checkout"}
                         </div>
@@ -1317,10 +1317,10 @@ export default function PricingPage() {
                           wallets={wallets}
                           connectButton={{
                             label: <span className="microtext">Login</span>,
-                            className: "px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#4dd9cf]",
+                            className: "px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#ffc029]",
                             style: {
                               backgroundColor: "transparent",
-                              border: "1px solid #4dd9cf",
+                              border: "1px solid #ffc029",
                               color: "#e5e7eb",
                               padding: "6px 10px",
                               lineHeight: "1",
@@ -1329,10 +1329,10 @@ export default function PricingPage() {
                           }}
                           signInButton={{
                             label: "Authenticate",
-                            className: "px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#4dd9cf]",
+                            className: "px-3 py-1.5 rounded-md border text-[11px] hover:bg-foreground/5 border-[#ffc029]",
                             style: {
                               backgroundColor: "transparent",
-                              border: "1px solid #4dd9cf",
+                              border: "1px solid #ffc029",
                               color: "#e5e7eb",
                               padding: "6px 10px",
                               lineHeight: "1",
