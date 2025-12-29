@@ -53,12 +53,12 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[var(--primary)]/5 via-transparent to-[var(--primary)]/5" />
         <div className="relative max-w-7xl mx-auto px-6 py-20 lg:py-32">
-          <div className="text-center max-w-4xl mx-auto">
+          <div className="text-center max-w-5xl mx-auto">
             <div className="inline-flex items-center justify-center mb-8">
               <img
                 src="/BasaltEchoWide.png"
                 alt="BasaltEcho by BasaltHQ"
-                className="h-16 w-auto object-contain"
+                className="h-24 w-auto object-contain"
               />
             </div>
             
@@ -69,7 +69,7 @@ export default function Home() {
               </span>
             </h1>
             
-            <p className="text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-muted-foreground mb-10 max-w-5xl mx-auto leading-relaxed">
               BasaltEcho by BasaltHQ delivers professional-grade AI voice interactions with ultra-low latency. 
               Connect, customize, and communicate with advanced AI assistants in real-time through any platform.
             </p>

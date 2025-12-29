@@ -155,9 +155,9 @@ export function Navbar() {
 
     return (
 		<header className="w-full sticky top-0 z-20 backdrop-blur bg-background/70 border-b">
-			<div className="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">
+			<div className="max-w-5xl mx-auto px-4 h-20 flex items-center justify-between">
 				<Link href="/" className="flex items-center gap-2 min-w-0">
-					<img src="/BasaltEchoWide.png" alt="BasaltEcho by BasaltHQ.com" className="w-auto h-9 rounded-md object-contain bg-transparent flex-shrink-0" />
+					<img src="/BasaltEchoWideD.png" alt="BasaltEcho by BasaltHQ" className="w-auto h-14 rounded-md object-contain bg-transparent flex-shrink-0" />
 					{/* <span className="hidden sm:inline text-sm md:text-xs font-semibold leading-none">BasaltEcho by BasaltHQ.com</span> */}
 				</Link>
                 <div className="flex items-center gap-2 flex-shrink-0">
