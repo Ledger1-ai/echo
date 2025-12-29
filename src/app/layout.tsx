@@ -21,14 +21,14 @@ const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
 
 export const metadata: Metadata = {
   metadataBase: new URL(APP_URL),
-  applicationName: "BasaltEcho by BasaltHQ.com",
+  applicationName: "BasaltEcho by BasaltHQ",
   title: {
-    default: "BasaltEcho by BasaltHQ.com",
+    default: "BasaltEcho by BasaltHQ",
     template: "%s • BasaltEcho",
   },
-  description: "Live AI audio agent with ETH billing on Base - BasaltEcho by BasaltHQ.com",
+  description: "Live AI audio agent with ETH billing on Base - BasaltEcho by BasaltHQ",
   keywords: [
-    "BasaltEcho by BasaltHQ.com",
+    "BasaltEcho by BasaltHQ",
     "AI",
     "agent",
     "voice",
@@ -42,22 +42,22 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: APP_URL,
-    title: "BasaltEcho by BasaltHQ.com",
+    title: "BasaltEcho by BasaltHQ",
     siteName: "BasaltEcho",
-    description: "Live AI audio agent with ETH billing on Base - BasaltEcho by BasaltHQ.com",
+    description: "Live AI audio agent with ETH billing on Base - BasaltEcho by BasaltHQ",
     images: [
       {
         url: "https://engram1.blob.core.windows.net/voicehub/l1voicebg.png",
         width: 1200,
         height: 630,
-        alt: "BasaltEcho by BasaltHQ.com",
+        alt: "BasaltEcho by BasaltHQ",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "BasaltEcho by BasaltHQ.com",
-    description: "Live AI audio agent with ETH billing on Base - BasaltEcho by BasaltHQ.com",
+    title: "BasaltEcho by BasaltHQ",
+    description: "Live AI audio agent with ETH billing on Base - BasaltEcho by BasaltHQ",
     images: ["https://engram1.blob.core.windows.net/voicehub/l1voicebg.png"],
   },
   icons: {
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "BasaltEcho by BasaltHQ.com",
+    title: "BasaltEcho by BasaltHQ",
   },
   category: "utilities",
   robots: {

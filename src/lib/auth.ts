@@ -34,7 +34,7 @@ export function getAuth(req?: NextRequest) {
         client,
 		adminAccount: getAdminAccount(),
 		login: {
-			statement: "Authenticate with VoiceHub by Ledger1.ai",
+			statement: "Authenticate with BasaltEcho by BasaltHQ",
 			payloadExpirationTimeSeconds: 5 * 60,
 		},
 		jwt: {
